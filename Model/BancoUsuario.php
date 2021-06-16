@@ -1,5 +1,5 @@
 <?php
-$_SESSION_start();
+session_start();
 function insereUsuario($conexao,$email,$senha){
 
     $option = ['cost'=>8];
@@ -14,13 +14,13 @@ function insereUsuario($conexao,$email,$senha){
 
 function buscarUsuario($conexao,$email){
    
-    $query = "select * from tbusuario where loginusu- '{$email}'";
+    $query = "select * from tbusuario where loginusu= '{$email}'";
 
     $resul = mysqli_query($conexao,$query);
     $infoemail = mysqli_fetch_assoc($resul);
     
     $_SESSION["emailusubusca"] = $infoemail["loginusu"];
-    $_SESSION["codusubusca"] = $infoemail["loginusu"]
+    $_SESSION["codusubusca"] = $infoemail["codusu"];
     
     return $resul;
 }

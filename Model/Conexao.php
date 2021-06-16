@@ -1,5 +1,6 @@
 <?php
 $url = 'localhost';
-$senha = 'root';
-$nomeBanco = 'bdtecflix'
-$conexao = mysqli_connect(,'roost','','bdtecflix');
+$usuario = 'root';
+$senha = '';
+$nomeBanco = 'bdtecflixx';
+$conexao = mysqli_connect($url,$usuario,$senha,$nomeBanco);

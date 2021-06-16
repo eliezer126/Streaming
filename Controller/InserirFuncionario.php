@@ -3,7 +3,7 @@ require_once("../Model/BancoFuncionario.php");
 require_once("../Model/Conexao.php");
 
 extract($_REQUEST,EXTR_OVERWRITE);
-if(insereFilme($conexao, $codusuFK, $nomefun,$funcaofun,)){
+if(inserefun($conexao, $codusuFK, $nomefun,$fonefun,$funcaofun)){
     session_destroy();
     echo("Funcionario cadastrado com sucesso");
 }else{

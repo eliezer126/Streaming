@@ -6,7 +6,7 @@ $email = isset($_POST["email"])?$_POST["email"]:"";
 
 if(buscarUsuario($conexao,$email)){
 
-    header("location:../View/CadastroFuncionario.php")
+    header("location:../View/CadastroFuncionario.php");
 }else{
-    echo("não deu certo")
+    echo("não deu certo");
 }
