@@ -42,8 +42,8 @@
             Filme
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="CadastroFilme.php">Cadastrar</a></li>
-            <li><a class="dropdown-item" href="#">Buscar</a></li>
+            <li><a class="dropdown-item" href="../View/CadastroFilme.php">Cadastrar</a></li>
+            <li><a class="dropdown-item" href="../View/VisualizarFilme">Buscar</a></li>
             <li><a class="dropdown-item" href="#">Alterar</a></li>
           </ul>
           <li class="nav-item dropdown">

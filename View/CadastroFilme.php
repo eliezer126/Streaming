@@ -1,6 +1,7 @@
 <?php
 include('Header.php');
 ?>
+<div class="container">
 <form action="../Controller/InserirFilme.php" class="row g-3">
   <div class="col-md-8">
     <label for="inputFilme" class="form-label">Filme</label>
@@ -31,6 +32,7 @@ include('Header.php');
     <button type="submit" class="btn btn-primary">Cadastro</button>
   </div>
 </form>
+</div>
 <?php
 include('Footer.php');
 ?>

@@ -1,4 +1,5 @@
 <?php
+session_stat()
 function insereFilme($conexao, $filme, $sinopse,$ano, $capa, $url){
     $query = "insert into tbfilme(nomefil,generofil,sinopsefil,anofil,capafil,urlfil value('{$filme}','{$sinopse}','{$ano}', '{$capa}', '{$url}')");
     $resultado = mysqli_query($conexao,$query);
@@ -7,10 +8,14 @@ function insereFilme($conexao, $filme, $sinopse,$ano, $capa, $url){
 function visuFilme(($conexao, $filme){
     $query = "selet * from tbfilme where nomefil like '%{$filme}%'";
     $resultado = mysqli_query($conexao,$query);
-    $infoFilme = mysqli_fetch_assoc($resultado);
+   // $infoFilme = mysqli_fetch_assoc($resultado);
 
-    $_SESSION["infoFilme"] = array();
-    $_SESSION["infoFilme"] = $infoemail;
+    
+    return $resultado;
+}
+function visuCodigoFilme($conexao, $codigo){
+    $query = "select * from tbFilme where codfil={$codigo}";
+    $resultado = mysqli_query($conexao,$query);
     return $resultado;
 }
 
