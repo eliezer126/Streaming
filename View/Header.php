@@ -8,6 +8,7 @@
     <title>Área do Funcionário</title>
 </head>
 <body>
+<div class="container align-center">
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">TechFlix</a>
@@ -24,7 +25,7 @@
             Funcionário
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="CadastroFuncionario.php">Cadastrar</a></li>
+            <li><a class="dropdown-item" href="../View/CadastroFuncionario.php">Cadastrar</a></li>
             <li><a class="dropdown-item" href="#">Buscar</a></li>
             <li><a class="dropdown-item" href="#">Alterar</a></li>
           </ul>
@@ -33,7 +34,7 @@
             Usuario
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="CadastroUsuario.php">Cadastrar</a></li>
+            <li><a class="dropdown-item" href="../View/CadastroUsuario.php">Cadastrar</a></li>
             <li><a class="dropdown-item" href="#">Buscar</a></li>
             <li><a class="dropdown-item" href="#">Alterar</a></li>
           </ul>
@@ -43,7 +44,7 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="../View/CadastroFilme.php">Cadastrar</a></li>
-            <li><a class="dropdown-item" href="../View/VisualizarFilme">Buscar</a></li>
+            <li><a class="dropdown-item" href="../View/VisualizarFilme.php">Buscar</a></li>
             <li><a class="dropdown-item" href="#">Alterar</a></li>
           </ul>
           <li class="nav-item dropdown">
@@ -51,7 +52,7 @@
             Série
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="CadastroSerie.php">Cadastrar</a></li>
+            <li><a class="dropdown-item" href="../View/CadastroSerie.php">Cadastrar</a></li>
             <li><a class="dropdown-item" href="#">Buscar</a></li>
             <li><a class="dropdown-item" href="#">Alterar</a></li>
           </ul>
@@ -60,3 +61,5 @@
     </div>
   </div>
 </nav>
+    <img src="img/img1.gif" width="1297"/>
+</div>

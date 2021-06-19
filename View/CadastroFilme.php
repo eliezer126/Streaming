@@ -2,18 +2,18 @@
 include('Header.php');
 ?>
 <div class="container">
-<form action="../Controller/InserirFilme.php" class="row g-3">
+<form action="../Controller/InserirFilme.php" method="get" class="row g-3">
   <div class="col-md-8">
     <label for="inputFilme" class="form-label">Filme</label>
     <input type="text" name="fIlme" class="form-control" id="inputFilme">
   </div>
   <div class="col-md-4">
-    <label for="inputGênero" class="form-label">Gênero</label>
-    <input type="text" name="genero" class="form-control" id="inputGênero">
+    <label for="inputGenero" class="form-label">Gênero</label>
+    <input type="text" name="genero" class="form-control" id="inputGenero">
   </div>
   <div class="col-md-2">
     <label for="inputAno" class="form-label">Ano</label>
-    <input type="number" name="ano" class="form-control" id="inputAno">
+    <input type="text" name="ano" class="form-control" id="inputAno" placeholder="2000">
   </div>
   <div class="col-md-10">
     <label for="inputCapa" class="form-label">Capa</label>
@@ -21,7 +21,7 @@ include('Header.php');
   </div>
   <div class="col-12">
     <label for="inputUrl" class="form-label">Url</label>
-    <input type="text" name="url" class="form-control" id="inputUrl" placeholder="Apartment, studio, or floor">
+    <input type="text" name="url" class="form-control" id="inputUrl">
   
   <div class="form-floating">
   <textarea class="form-control" name="sinopse" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>

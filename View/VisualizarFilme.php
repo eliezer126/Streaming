@@ -1,19 +1,20 @@
 <?php
-session_start();
-include_once("header.php");
+include_once("Header.php");
 include_once("../Model/BancoFilme.php");
 include_once("../Model/Conexao.php");
 ?>
 <div class="container">
-<form action="" method="post" class="row g-3 <?=$aparenciaForm1?>">
+<form action="" method="post" class="row g-3">
     <div class="col-12">
         <label class="form-label"> Digite o nome do filme</label>
         <input type="text" required class="form-control" name="filme">
-    </div>
+    </br>
     <div class="col-12">
         <button type="submit" class="btn btn-primary">Localizar</button>
     </div>
+    </div>
 </form>
+
 <table class="table table-striped">
   <thead>
     <tr>
@@ -23,7 +24,7 @@ include_once("../Model/Conexao.php");
       <th scope="col">Ano</th>
       <th scope="col">Capa</th>
       <th scope="col">Alterar</th>
-      <th scope="col">Apagar</th>
+      <th scope="col">Deletar</th>
     </tr>
   </thead>
   <tbody>

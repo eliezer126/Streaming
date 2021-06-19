@@ -1,9 +1,9 @@
 <?php
 include('Header.php');
 include_once('../Model/Conexao.php');
-include_once('../Modeel/BancoFilme.php');
+include_once('../Model/BancoFilme.php');
 
-$codigo = $_GET["codigo"];
+$codigo = $_GET['codigo'];
 
 $resul = visuCodigoFilme($conexao, $codigo);
 $filme = mysqli_fetch_assoc($resul);
