@@ -10,6 +10,14 @@ include_once("../Model/Conexao.php");
         <input type="text" required class="form-control" name="filme">
     </br>
     <div class="col-12">
+        <label class="form-label"> Escolha o gênero do filme</label>
+        <input type="text" required class="form-control" name="filme">
+    </br>
+    <div class="col-12">
+        <label class="form-label"> Digite o ano do filme</label>
+        <input type="number" min="1900" max="2050" required class="form-control" name="filme">
+    </br>
+    <div class="col-12">
         <button type="submit" class="btn btn-primary">Localizar</button>
     </div>
     </div>
