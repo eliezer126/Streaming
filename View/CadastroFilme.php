@@ -5,7 +5,7 @@ include('Header.php');
 <form action="../Controller/InserirFilme.php" method="get" class="row g-3">
   <div class="col-md-8">
     <label for="inputFilme" class="form-label">Filme</label>
-    <input type="text" name="fIlme" class="form-control" id="inputFilme">
+    <input type="text" name="filme" class="form-control" id="inputFilme">
   </div>
   <div class="col-md-4">
     <label for="inputGenero" class="form-label">Gênero</label>

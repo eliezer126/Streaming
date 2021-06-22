@@ -62,4 +62,3 @@
   </div>
 </nav>
     <img src="img/img1.gif" width="1297"/>
-</div>

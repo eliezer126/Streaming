@@ -5,7 +5,7 @@ require_once("../Model/Conexao.php");
 
 extract($_REQUEST,EXTR_OVERWRITE);
 
-if(insereFilme($conexao, $filme, $genoro, $sinopse, $ano, $capa, $url)){
+if(insereFilme($conexao, $filme, $genero, $sinopse, $ano, $capa, $url)){
     echo("Filme cadastrado com sucesso!");
 }else{
     echo("O filme não foi cadastrado");

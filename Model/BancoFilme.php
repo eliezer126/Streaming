@@ -1,6 +1,6 @@
 <?php
 function insereFilme($conexao, $filme, $genero, $sinopse, $ano, $capa, $url){
-    $query = "insert into tbfilme(nomefil,generofil,sinopsefil,anofil,capafil,urlfil) values('{$filme}','{$genero}','{$sinopse}','{$ano}', '{$capa}', '{$url}')";
+    $query = "insert into tbfilme(nomefil,generofil,sipnosefil,anofil,capafil,urlfil) values('{$filme}','{$genero}','{$sinopse}','{$ano}', '{$capa}', '{$url}')";
     $resultado = mysqli_query($conexao,$query);
     return $resultado;
 }
@@ -19,7 +19,7 @@ function visuCodigoFilme($conexao, $codigo){
 }
 
 function alterFilme($conexao, $codfil, $filme, $genero, $sinopse, $ano, $capa, $url){
-    $query = "update tbfilme set nomefil='{$filme}', generofil='{$genero}', sinopsefil='{$sinopse}' anofil='{$ano}', capafil='{$capa}', urlfil='{$url}'where codfil='{$codfil}'";
+    $query = "update tbfilme set nomefil='{$filme}', generofil='{$genero}', sipnosefil='{$sinopse}' anofil='{$ano}', capafil='{$capa}', urlfil='{$url}'where codfil='{$codfil}'";
 
     $resultado = mysqli_query($conexao,$query);
     return $resultado;
@@ -34,4 +34,5 @@ function deleteFilme($conexao, $codfil){
 
 
 }
+?>
 
