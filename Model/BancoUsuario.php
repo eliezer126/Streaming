@@ -1,5 +1,4 @@
 <?php
-session_start();
 function insereUsuario($conexao,$email,$senha,$pin){
 
     $option = ['cost'=>8];
@@ -30,7 +29,7 @@ function buscarAcesso($conexao,$email,$senha){
 
     $resul = mysqli_query($conexao,$query);
 
-    $resul = mysqli_fetch_assoc($conexao,$query);
+    //$resul = mysqli_fetch_assoc($conexao,$query);
 
     if(mysqli_num_rows($resul) > 0){
         $linha = mysqli_fetch_assoc($resul);
@@ -38,7 +37,7 @@ function buscarAcesso($conexao,$email,$senha){
            $_SESSION["email"] = $linha["loginusu"];
            $_SESSION["codusu"] = $linha["codusu"];
 
-           $_SESSION["funcionario"] = buscarNomeUsuario($conexao,$linha["codusu"]);
+          // $_SESSION["funcionario"] = buscarNomeUsuario($conexao,$linha["codusu"]);
 
            return $linha["loginusu"];
         }else{
@@ -59,7 +58,7 @@ function trocarSenhausuario($conexao, $email, $novasenha, $pin){
    
     $option = ['cost'=>8];
 
-    $senha = password_hash($senha,PASSWORD_BCRYPT,$option);
+    $senha = password_hash($novasenha,PASSWORD_BCRYPT,$option);
     
     $query = "update tbusuario set senhausu='{$senha}' whare codusu = '{$codusu}'";
     $resultado= mysqli_query($conexao,$query);

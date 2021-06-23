@@ -3,7 +3,7 @@ session_start();
 include_once("../Model/Conexao.php");
 include_once("../Model/BancoUsuario.php");
 
-$login = $_POST["email"];
+$email = $_POST["email"];
 $senha = $_POST["senha"];
 $acesso = buscarAcesso($conexao,$email,$senha); 
 if($acesso === $email){
