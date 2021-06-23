@@ -1,6 +1,8 @@
 #formLogin{
-    margin: 30%;
-    
+    margin: 25%;
+    background-color: bisque;
+    border-radius: 25px;
+    padding: 4%;
 }
 #formEsqueceuSenha{
     margin-top: 40px;

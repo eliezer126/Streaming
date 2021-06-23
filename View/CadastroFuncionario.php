@@ -1,4 +1,8 @@
 <?php
+
+include_once("../Model/BancoUsuario.php");
+liberaAcesso();
+
 session_start();
 include('Header.php');
 ?>

@@ -1,4 +1,6 @@
 <?php
+include_once("../Model/BancoUsuario.php");
+liberaAcesso();
 include_once("Header.php");
 include_once("../Model/BancoFilme.php");
 include_once("../Model/Conexao.php");

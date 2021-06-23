@@ -1,4 +1,8 @@
 <?php
+
+include_once("../Model/BancoUsuario.php");
+liberaAcesso();
+
 include('Header.php');
 ?>
 <div class="container">

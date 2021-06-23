@@ -1,3 +1,7 @@
+<?php
+include_once("../Model/BancoUsuario.php");
+liberaAcesso();
+?>
 <!DOCTYPE html>
 <html lang="pt-Br">
 <head>
@@ -27,7 +31,6 @@
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="../View/CadastroFuncionario.php">Cadastrar</a></li>
             <li><a class="dropdown-item" href="#">Buscar</a></li>
-            <li><a class="dropdown-item" href="#">Alterar</a></li>
           </ul>
           <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -36,7 +39,6 @@
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="../View/CadastroUsuario.php">Cadastrar</a></li>
             <li><a class="dropdown-item" href="#">Buscar</a></li>
-            <li><a class="dropdown-item" href="#">Alterar</a></li>
           </ul>
           <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -45,7 +47,6 @@
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="../View/CadastroFilme.php">Cadastrar</a></li>
             <li><a class="dropdown-item" href="../View/VisualizarFilme.php">Buscar</a></li>
-            <li><a class="dropdown-item" href="#">Alterar</a></li>
           </ul>
           <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -54,10 +55,16 @@
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="../View/CadastroSerie.php">Cadastrar</a></li>
             <li><a class="dropdown-item" href="#">Buscar</a></li>
-            <li><a class="dropdown-item" href="#">Alterar</a></li>
           </ul>
         </li>
-      </ul>
+        <li class="nav-item dropdown"><a class="nav-link" href="#"> Olá, <?php echo($_SESSION["email"]);?></a>
+      </li>
+    <li class="nav-item dropdown">
+          <a class="nav-link" href="../Controller/Logout.php">
+            Sair
+          </a>
+    </li>
+    </ul>
     </div>
   </div>
 </nav>
