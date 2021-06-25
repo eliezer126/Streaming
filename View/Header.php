@@ -54,7 +54,7 @@ liberaAcesso();
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="../View/CadastroSerie.php">Cadastrar</a></li>
-            <li><a class="dropdown-item" href="#">Buscar</a></li>
+            <li><a class="dropdown-item" href="../View/VisualizarSerie.php">Buscar</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown"><a class="nav-link" href="#"> Olá, <?php echo($_SESSION["email"]);?></a>

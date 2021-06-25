@@ -1,14 +1,11 @@
 <?php
-include_once("../View/Header.php");
 require_once("../Model/BancoSerie.php");
 require_once("../Model/Conexao.php");
 
-extract($_REQUEST,EXTR_OVERWRITE);
+extract($_REQUEST, EXTR_OVERWRITE);
 
-if(insereFilme($conexao, $filme, $genero, $sinopse, $ano, $capa, $url)){
-    echo("Filme cadastrado com sucesso!");
+if(insereSerie($conexao,  $serie,  $temporada,  $episodio,  $genero,  $capa,  $url)) {
+    echo ("Série cadastrada com sucesso");
 }else{
-    echo("O filme não foi cadastrado");
+    echo ("Série não foi para o banco de dados");
 }
-
-include_once("../View/Footer.php");
