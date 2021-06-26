@@ -3,7 +3,7 @@
 include_once("../Model/BancoUsuario.php");
 liberaAcesso();
 
-session_start();
+//session_start();
 include('Header.php');
 ?>
 

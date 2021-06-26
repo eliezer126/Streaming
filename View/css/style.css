@@ -6,4 +6,11 @@
 }
 #formEsqueceuSenha{
     margin-top: 40px;
+
+}
+#tabela{
+    margin-block: 20%;
+}
+#fundo{
+    background-color: brown;
 }

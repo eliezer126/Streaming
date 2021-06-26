@@ -49,7 +49,8 @@ include_once("../Model/Conexao.php");
       <td><?=$dados["nomeserie"]?></td>
       <td><?=$dados["temporadaserie"]?></td>
       <td><?=$dados["episodioserie"]?></td>
-      <td><img src="<?=$dados['capaserie']?>" while="50"></td>
+      <td><?=$dados["generoserie"]?></td>
+      <td><img src="<?=$dados['capaserie']?>" width="50"></td>
       <td>
         <a class="btn btn-primary" href="AlterarSerie.php?codigo=<?=$dados["codserie"]?>">Alterar</a>
         </td>

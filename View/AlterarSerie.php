@@ -15,25 +15,25 @@ $serie = mysqli_fetch_assoc($resul);
     <label for="inputcodigo" class="form-label">Código</label>
     <input type="text" readonly value="<?=$serie['codserie']?>" name="codserie" class="form-control" id="inputcodigo">
   </div>
-  <div class="col-md-8">
+  <div class="col-md-6">
     <label for="inputserie" class="form-label">Série</label>
     <input type="text" value="<?=$serie['nomeserie']?>" name="serie" class="form-control" id="inputserie">
   </div>
-  <div class="col-md-3">
-    <label for="inputtemporada" class="form-label">Temporada</label>
-    <input type="text" name="temporada" value="<?=$serie['Temporadaserie']?>" class="form-control" id="inputtemporada">
+  <div class="col-md-5">
+    <label for="inputTemporada" class="form-label">Temporada</label>
+    <input type="text" value="<?=$serie['temporadaserie']?>" name="temporada" class="form-control" id="inputTemporada">
   </div>
-  <div class="col-md-2">
+  <div class="col-md-5">
     <label for="inputepisodio" class="form-label">Episódio</label>
     <input type="number" name="episodio" value="<?=$serie['episodioserie']?>" class="form-control" id="inputepisodio">
   </div>
-  <div class="col-md-4">
+  <div class="col-md-7">
     <label for="inputgenero" class="form-label">Gênero</label>
     <input type="number" name="genero" value="<?=$serie['generoserie']?>" class="form-control" id="inputgenero">
   </div>
-  <div class="col-md-10">
+  <div class="col-md-12">
     <label for="inputCapa" class="form-label">Capa</label>
-    <input type="text" name="capa" value="<?=$sereie['capaserie']?>" class="form-control" id="inputCapa">
+    <input type="text" name="capa" value="<?=$serie['capaserie']?>" class="form-control" id="inputCapa">
   </div>
   <div class="col-12">
     <label for="inputUrl" class="form-label">Url</label>

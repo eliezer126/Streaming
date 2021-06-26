@@ -6,9 +6,9 @@ include_once("../Model/BancoSerie.php");
 extract($_REQUEST, EXTR_OVERWRITE);
 
 if(deleteSerie($conexao, $codserie)){
-    echo("<p class='alert alert-primary' role='alert'>O episódio foi excluido.</p>");
+    echo("<p class='alert alert-primary' role='alert'>A série foi excluido.</p>");
 }else{
-    echo("<p class='alert alert-danger' role='alert'>O episódio não foi excluido.</p>");
+    echo("<p class='alert alert-danger' role='alert'>A série não foi excluido.</p>");
 }
 
 include_once("../View/Footer.php");

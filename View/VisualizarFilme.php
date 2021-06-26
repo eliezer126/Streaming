@@ -39,7 +39,7 @@ include_once("../Model/Conexao.php");
   </thead>
   <tbody>
   <?php
-    $filme = isset($_POST["filme"])? $_POST["filme"]:"";
+    $filme = isset($_POST["filme"]) ? $_POST["filme"]:"";
     $dado = visuNomeFilme($conexao, $filme);
     foreach($dado as $dados) :
   ?>
@@ -48,7 +48,7 @@ include_once("../Model/Conexao.php");
       <td><?=$dados["nomefil"]?></td>
       <td><?=$dados["generofil"]?></td>
       <td><?=$dados["anofil"]?></td>
-      <td><img src="<?=$dados['capafil']?>" while="50"></td>
+      <td><img src="<?=$dados['capafil']?>" width="50"></td>
       <td>
         <a class="btn btn-primary" href="AlterarFilme.php?codigo=<?=$dados["codfil"]?>">Alterar</a>
         </td>

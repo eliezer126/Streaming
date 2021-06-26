@@ -30,7 +30,7 @@ liberaAcesso();
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="../View/CadastroFuncionario.php">Cadastrar</a></li>
-            <li><a class="dropdown-item" href="#">Buscar</a></li>
+            <li><a class="dropdown-item" href="../View/VisualizarFun.php">Buscar</a></li>
           </ul>
           <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -68,4 +68,4 @@ liberaAcesso();
     </div>
   </div>
 </nav>
-    <img src="img/img1.gif" width="1297"/>
+    <img src="../View/img/img1.gif" width="1297"/>

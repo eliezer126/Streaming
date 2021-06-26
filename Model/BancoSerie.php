@@ -24,7 +24,7 @@ function alterarSerie($conexao, $codserie, $serie, $temporada, $episodio, $gener
     return $resultado;
 }
 function deleteSerie($conexao, $codserie){
-    $query = "delete from tbserie where codserie='{codserie}'";
+    $query = "delete from tbserie where codserie='{$codserie}'";
     $resultado = mysqli_query($conexao, $query);
 
     return $resultado;

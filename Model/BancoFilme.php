@@ -5,7 +5,7 @@ function insereFilme($conexao, $filme, $genero, $sinopse, $ano, $capa, $url){
     return $resultado;
 }
 function visuNomeFilme($conexao, $filme){
-    $query = "selet * from tbfilme where nomefil like '%{$filme}%'";
+    $query = "select * from tbfilme where nomefil like '%{$filme}%'";
     $resultado = mysqli_query($conexao,$query);
    // $infoFilme = mysqli_fetch_assoc($resultado);
 
