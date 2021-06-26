@@ -12,7 +12,8 @@ liberaAcesso();
     <title>Área do Funcionário</title>
 </head>
 <body>
-<div class="container align-center">
+  <div >
+<div class="container align-center" style="background-image: url(img/img1.gif); width: 1400px; height: 1100px;">
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">TechFlix</a>
@@ -38,7 +39,7 @@ liberaAcesso();
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="../View/CadastroUsuario.php">Cadastrar</a></li>
-            <li><a class="dropdown-item" href="#">Buscar</a></li>
+            <li><a class="dropdown-item" href="../View/VisualizarUsu.php">Buscar</a></li>
           </ul>
           <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -68,4 +69,4 @@ liberaAcesso();
     </div>
   </div>
 </nav>
-    <img src="../View/img/img1.gif" width="1297"/>
+   

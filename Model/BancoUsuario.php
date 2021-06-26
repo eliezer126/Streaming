@@ -90,3 +90,13 @@ $nome = $resulArray["nomefun"];
 
 return $nome;
 }
+function visuNomeUsuario($conexao, $usua){
+    $query = "select * from tbusuario where loginusu like '%{$usua}%'";
+    $resultado = mysqli_query($conexao,$query);
+    return $resultado;
+}
+function deleteUsuario($conexao, $codusu){
+        $query = "delete from tbusuario where codusu='{$codusu}'";
+        $resultado = mysqli_query($conexao,$query);
+        return $resultado;
+}
