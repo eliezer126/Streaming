@@ -25,7 +25,7 @@ include_once("../Model/Conexao.php");
     </div>
 </form>
 
-<table class="table table-striped">
+<table class="table table-success table-striped">
   <thead>
     <tr>
       <th scope="col">Código</th>
